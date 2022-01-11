@@ -52,6 +52,6 @@ function check(){
   
 }
 function back(){
-  window.location.href = "feeds.html"
+  window.location.href = "../"
 }
 
