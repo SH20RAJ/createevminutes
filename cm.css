@@ -1,12 +1,30 @@
 
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 *{
   padding: 0;
   margin: 0;
+  font-family: Roboto;
 }
 body{
   background: black;
 }
 
+#scrollbar {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: aqua;
+  z-index: 999;
+}
+#completed {
+  position: absolute;
+  height: 4px;
+  width: 50%;
+  background: red;
+  z-index: 999;
+}
 video {
   position: absolute;
   width: 100%;
@@ -23,8 +41,34 @@ button{
   position: fixed;
   width: 200px;
   height: 200px;
-  background: red;
+  background: transparent;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%)
+}
+
+#next {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: transparent;
+  right: 0;
+  top: 0;
+}
+#prev {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: transparent;
+  left: 0;
+  top: 0;
+}
+#title {
+  color: whitesmoke;
+  background: grey;
+  padding: 4px;
+  border-radius: 8px;
+  position: fixed;
+  bottom: 4px;
+  z-index: 400;
 }

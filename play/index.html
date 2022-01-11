@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CreateevMinutes - Creative Short Videos Here</title>
+<link rel="shortcut icon" href="../logo.jpg" type="image/x-icon">
+<link rel="stylesheet" href="../cm.css">
+</head>
+<body>
+  <div class="container">
+    <div id="scrollbar">
+      <div id="completed"></div>
+    </div>
+    <video id="video" autoplay poster="">
+<source src="https://i.imgur.com/vzojofX.mp4">
+    </video>
+    <div id="title"></div>
+    <div onclick="next()" id="next"></div>
+    <div onclick="prev()" id="prev"></div>
+    <div class="controls">
+      <div onclick="playpause()" id="playpause"></div>
+    </div>
+  </div>
+  <script>
+  function getParameterByName( name ){
+  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  var regexS = "[\\?&]"+name+"=([^&#]*)";
+  var regex = new RegExp( regexS );
+  var results = regex.exec( window.location.href );
+  if( results == null )
+    return "";
+  else
+    return decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+  fetch('../collectiondata/'+getParameterByName('collection')+'.json')
+  .then(response => response.json())
+  .then(data => {window.videojson = data;init();});
+  </script>
+<script src="../sc.js"></script>
+</body>
+</html>
