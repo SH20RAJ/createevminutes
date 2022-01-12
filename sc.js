@@ -24,7 +24,7 @@ function next(){
 }
 
 function prev(){
-  if(currentvideo == 1) back();
+  if(currentvideo == 0) back();
   let id = videojson.videos[currentvideo - 1];
   video.src = id.videourl;
   title.innerHTML = id.title;
