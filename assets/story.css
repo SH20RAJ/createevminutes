@@ -46,3 +46,25 @@
     stroke-dasharray: 8;
   }
 }
+
+/* SopScrollBar 2 - class="ssb2" 💖 More Here :- https://sh20raj.github.io/SopScrollbar/
+--How to Use--
+Copy the Class Name and Assign to the element where you want to see your ScrollBar. Example
+- Body Tag. (To getting in whole website)
+- Iframe
+- Textarea
+- Div
+- and All other elements.
+*/
+.ssb2::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.ssb2::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+.ssb2::-webkit-scrollbar-thumb {
+  background-color: #aee4ff;
+  border-radius: 10px;
+}

@@ -5,11 +5,12 @@
   margin: 0;
   font-family: Poppins;
 }
-body{
-  background: black;
+body {
+  background: #0a1624;
+  background: linear-gradient(to right, rgb(4, 21, 44), rgb(2, 71, 83));
 }
 
-  .line {
+.line {
   background: linear-gradient(-135deg, #c850c0, #4158d0);
   width: 100%;
   display: block;
