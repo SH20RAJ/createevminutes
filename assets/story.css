@@ -15,7 +15,7 @@
   display: inline-block;
   width:100px;
   height:100px;}
-  svg{
+  .circle svg{
     fill:none;
     stroke:#8a3ab9;
     stroke-linecap: round;
@@ -25,7 +25,7 @@
     animation: stroke-draw 6s ease-out infinite alternate; 
     /* animation: stroke-draw 6s cubic-bezier(0.77, 0, 0.175, 1) infinite alternate; */
   }
-  img{
+  .circle img{
     position:absolute;
     left:50%;
     top:50%;

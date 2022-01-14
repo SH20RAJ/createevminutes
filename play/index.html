@@ -24,6 +24,9 @@
       <source src="">
     </video>
     <div id="title"></div>
+    <a href="../"><div id="home">
+				<img src="../assets/home-button.svg" alt="">
+      </div></a>
     <div id="share" onclick="share()">Share</div>
     <div onclick="next()" id="next"></div>
     <div onclick="prev()" id="prev"></div>
@@ -45,5 +48,22 @@
 <script src="../sc.js"></script>
 
 <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=61de7c5597d54f00196fa9db&product=sop' async='async'></script>
+
+<style>
+  #home {
+  position:fixed;
+  top:0;
+  left:0;
+  margin:8px;
+  cursor:pointer;
+}
+#home {
+  width: 50px;
+  border-radius:50%;
+}
+#home img{
+  width:100%;
+}
+</style>
 </body>
 </html>
