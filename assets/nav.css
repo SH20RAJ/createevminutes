@@ -6,7 +6,7 @@
   font-family: 'Poppins', sans-serif;
 }
 #nav{
-  position: absolute;
+  position: sticky;
   color: aqua;
   z-index: 2;
   left: 0px;

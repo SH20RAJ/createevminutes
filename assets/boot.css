@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.boot{
+  text-align: center;
+  height: 80px;
+  width: 100%;
+  line-height: 80px;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+  position: fixed;
+  bottom: 0;
+}
+.boot .menu{
+  display: flex;
+  position: relative;
+}
+.boot .menu li{
+  list-style: none;
+  flex: 1;
+  font-size: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+.boot .menu li a{
+  color: #1d1f20;
+  transition: color 0.3s ease;
+}
+.boot .menu li:hover a{
+  color: #f23b26;
+}
+.boot .menu li:first-child a{
+  color: #f23b26;
+}
+.boot .menu .line{
+  position: absolute;
+  height: 5px;
+  width: 33%;
+  background: #f23b26;
+  left: 0;
+  bottom: 0;
+  transition: all 0.3s ease;
+}
+.boot .menu li:nth-child(2):hover ~ .line{
+  left: 33%;
+}
+.boot .menu li:nth-child(3):hover ~ .line{
+  left: 66%;
+}
+

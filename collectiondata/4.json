@@ -1,56 +1,61 @@
 {
     "jsonid":4,
     "type":"video",
+    "source":"https://imgur.com/gallery/KZlURIy",
+    "thumb":"vzojofX",
+    "note":"",
+    "category":["Respect"],
+    "details":["Date of Launch","Other"],
     "videos":[
         {
             "id":1,
             "title":"My Video Title 1...",
-            "videourl":"https://i.imgur.com/vzojofX.mp4"
+            "imgurid":"vzojofX"
         },
         {
             "id":2,
             "title":"My Video Title 2...",
-            "videourl":"https://i.imgur.com/oAcDWDf.mp4"
+            "imgurid":"oAcDWDf"
         },
         {
             "id":3,
             "title":"My Video Title 3...",
-            "videourl":"https://i.imgur.com/f1eG2yN.mp4"
+            "imgurid":"f1eG2yN"
         },
         {
             "id":4,
             "title":"My Video Title 4...",
-            "videourl":"https://i.imgur.com/oMcw0UU.mp4"
+            "imgurid":"oMcw0UU"
         },
         {
             "id":5,
             "title":"My Video Title 5...",
-            "videourl":"https://web.archive.org/web/20220112120534if_/https://scontent.cdninstagram.com/v/t50.2886-16/271149544_655560532242282_3263167094427906770_n.mp4?_nc_ht=scontent-ort2-2.cdninstagram.com&_nc_cat=106&_nc_ohc=V_Nm9Pxb_6MAX9XEgBq&edm=APfKNqwBAAAA&ccb=7-4&oe=61E117BE&oh=00_AT9cF1r4Kn7U5AXDO1-3pkSxR9txWRDfZu_6jbLI08gf3Q&_nc_sid=74f7ba"
+            "imgurid":"https://web.archive.org/web/20220112120534if_/https://scontent.cdninstagram.com/v/t50.2886-16/271149544_655560532242282_3263167094427906770_n?_nc_ht=scontent-ort2-2.cdninstagram.com&_nc_cat=106&_nc_ohc=V_Nm9Pxb_6MAX9XEgBq&edm=APfKNqwBAAAA&ccb=7-4&oe=61E117BE&oh=00_AT9cF1r4Kn7U5AXDO1-3pkSxR9txWRDfZu_6jbLI08gf3Q&_nc_sid=74f7ba"
         },
         {
             "id":6,
             "title":"My Video Title 6...",
-            "videourl":"https://i.imgur.com/vzojofX.mp4"
+            "imgurid":"vzojofX"
         },
         {
             "id":7,
             "title":"My Video Title 7...",
-            "videourl":"https://i.imgur.com/vzojofX.mp4"
+            "imgurid":"vzojofX"
         },
         {
             "id":8,
             "title":"My Video Title 8...",
-            "videourl":"https://i.imgur.com/vzojofX.mp4"
+            "imgurid":"vzojofX"
         },
         {
             "id":9,
             "title":"My Video Title 9...",
-            "videourl":"https://i.imgur.com/vzojofX.mp4"
+            "imgurid":"vzojofX"
         },
         {
             "id":10,
             "title":"My Video Title 10...",
-            "videourl":"https://i.imgur.com/vzojofX.mp4"
+            "imgurid":"vzojofX"
         }
     ]
 }

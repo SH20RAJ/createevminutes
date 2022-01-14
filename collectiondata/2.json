@@ -2,56 +2,60 @@
     "jsonid":2,
     "type":"video",
     "source":"https://imgur.com/gallery/KZlURIy",
+    "thumb":"EGuMTZr",
+    "note":"",
+    "category":["Respect"],
+    "details":["Date of Launch","Other"],
     "videos":[
         {
             "id":1,
             "title":"Respect ++ - CreateevMinutes #1...",
-            "videourl":"https://i.imgur.com/EGuMTZr.mp4"
+            "imgurid":"EGuMTZr"
         },
         {
             "id":2,
             "title":"Respect ++ - CreateevMinutes #2...",
-            "videourl":"https://i.imgur.com/MUXuCSR.mp4"
+            "imgurid":"MUXuCSR"
         },
         {
             "id":3,
             "title":"Respect ++ - CreateevMinutes #3...",
-            "videourl":"https://i.imgur.com/DUAMSuE.mp4"
+            "imgurid":"DUAMSuE"
         },
         {
             "id":4,
             "title":"Respect ++ - CreateevMinutes #4...",
-            "videourl":"https://i.imgur.com/8y18Ftj.mp4"
+            "imgurid":"8y18Ftj"
         },
         {
             "id":5,
             "title":"Respect ++ - CreateevMinutes #5...",
-            "videourl":"https://i.imgur.com/Mp57SYa.mp4"
+            "imgurid":"Mp57SYa"
         },
         {
             "id":6,
             "title":"Respect ++ - CreateevMinutes #6...",
-            "videourl":"https://i.imgur.com/6g3VAKf.mp4"
+            "imgurid":"6g3VAKf"
         },
         {
             "id":7,
             "title":"Respect ++ - CreateevMinutes #7...",
-            "videourl":"https://i.imgur.com/CiLcHaO.mp4"
+            "imgurid":"CiLcHaO"
         },
         {
             "id":8,
             "title":"Respect ++ - CreateevMinutes #8...",
-            "videourl":"https://i.imgur.com/RtKWEQV.mp4"
+            "imgurid":"RtKWEQV"
         },
         {
             "id":9,
             "title":"Respect ++ - CreateevMinutes #9...",
-            "videourl":"https://i.imgur.com/I7vlvXm.mp4"
+            "imgurid":"I7vlvXm"
         },
         {
             "id":10,
             "title":"Respect ++ - CreateevMinutes #10...",
-            "videourl":"https://i.imgur.com/mSqKFXu.mp4"
+            "imgurid":"mSqKFXu"
         }
     ]
 }

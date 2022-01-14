@@ -1,11 +1,35 @@
 body {
   height: 100%;
   background: #007bff;
-  background: linear-gradient(to right, rgb(49, 135, 248), #33AEFF);
+  background: linear-gradient(to right, rgba(117, 167, 233, 0.726), rgba(238, 163, 232, 0.808));
 }
 footer {
-  position: sticky;
   display: block;
   width: 100%;
   bottom: 0;
+}
+
+/* SopScrollBar 24 - class="ssb24" 💖 More Here :- https://sh20raj.github.io/SopScrollbar/
+--How to Use--
+Copy the Class Name and Assign to the element where you want to see your ScrollBar. Examples
+- Body Tag. (To getting in whole website)
+- Iframe
+- Textarea
+- Div
+- and All other elements.
+*/
+.ssb24::-webkit-scrollbar{
+  width:12px;
+}
+
+.ssb24::-webkit-scrollbar-thumb{
+  background:linear-gradient(transparent,#6a158b);
+  border-radius:6px;
+}
+.ssb24::-webkit-scrollbar-thumb:hover{
+  background:linear-gradient(#6a158b,transparent);  
+
+}
+.ssb24::-webkit-scrollbar{
+  background:transparent;
 }

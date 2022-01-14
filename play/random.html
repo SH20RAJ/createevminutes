@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CreateevMinutes - Creative Short Videos Here</title>
+
+
+	<meta property="og:title" content="CreateevMinutes - Creative Short Videos Here 💖" />
+	<meta property="og:description" content="CreateevMinutes - Creative Short Videos Here 💖 -  Explore the CreateevMinutes Creative Collections - Every Collection contains 10 Videos or Contents - Enjoy 💖"
+	/>
+	<meta property="og:image" content="https://createevminutes.sh20raj.repl.co/logo.jpg" />
+
+
+
+	<link rel="shortcut icon" href="../logo.jpg" type="image/x-icon">
+	<link rel="stylesheet" href="../cm.css">
+
+</head>
+
+<body>
+
+	<div class="container">
+		<div id="scrollbar">
+			<div id="completed"></div>
+		</div>
+		<video id="video" autoplay poster="">
+			<source src="">
+		</video>
+		<div id="title"></div>
+		<div id="colx">CM</div>
+		<div class="rightc">
+
+			<div id="reset" onclick="location.reload()">
+				<img src="../assets/angle-circle-arrow-down.svg" alt="">
+      </div>
+      <a href="../"><div id="home">
+				<img src="../assets/home-button.svg" alt="">
+      </div></a>
+
+      <div id="share" onclick="share()">Share</div>
+    </div>
+
+    <div onclick="next()" id="next"></div>
+    <div onclick="prev()" id="prev"></div>
+    <div id="loader"></div>
+    <div id="ad">
+    </div>
+    <div class="controls">
+      <div onclick="playpause()" id="playpause">
+      </div>
+    </div>
+  </div>
+
+<script src="random.js"></script>
+
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=61de7c5597d54f00196fa9db&product=sop' async='async'></script>
+<style>
+div.rightc {
+    right: 4px;
+    bottom: 50px;
+    padding: 4px;
+    position: fixed;
+    z-index: 4;
+    cursor: pointer;
+}
+.rightc {
+  width: 50px;
+}
+.rightc img{
+  width:100%;
+}
+#share,#colx{
+  color: #ffe882;
+  background: grey;
+  padding: 4px;
+  border-radius: 8px;
+  z-index: 4;
+  cursor: pointer;
+  margin:6px;
+}
+#colx {
+  position:fixed;
+  top:0;
+  right:0;
+}
+#home {
+  position:fixed;
+  top:0;
+  left:0;
+  margin:8px;
+}
+#home {
+  width: 50px;
+  border-radius:50%;
+}
+#home img{
+  width:100%;
+}
+</style>
+</body>
+</html>

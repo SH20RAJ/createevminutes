@@ -1,56 +1,61 @@
 {
     "jsonid":3,
     "type":"video",
+    "source":"https://imgur.com/gallery/KZlURIy",
+    "thumb":"E2U2LWa",
+    "note":"",
+    "category":["Respect"],
+    "details":["Date of Launch","Other"],
     "videos":[
         {
             "id":1,
             "title":"My Video Title 1...",
-            "videourl":"https://i.imgur.com/E2U2LWa.mp4"
+            "imgurid":"E2U2LWa"
         },
         {
             "id":2,
             "title":"My Video Title 2...",
-            "videourl":"https://i.imgur.com/oAcDWDf.mp4"
+            "imgurid":"oAcDWDf"
         },
         {
             "id":3,
             "title":"My Video Title 3...",
-            "videourl":"https://i.imgur.com/f1eG2yN.mp4"
+            "imgurid":"f1eG2yN"
         },
         {
             "id":4,
             "title":"My Video Title 4...",
-            "videourl":"https://i.imgur.com/oMcw0UU.mp4"
+            "imgurid":"oMcw0UU"
         },
         {
             "id":5,
             "title":"My Video Title 5...",
-            "videourl":"https://i.imgur.com/vzojofX.mp4"
+            "imgurid":"vzojofX"
         },
         {
             "id":6,
             "title":"My Video Title 6...",
-            "videourl":"https://i.imgur.com/vzojofX.mp4"
+            "imgurid":"vzojofX"
         },
         {
             "id":7,
             "title":"My Video Title 7...",
-            "videourl":"https://i.imgur.com/vzojofX.mp4"
+            "imgurid":"vzojofX"
         },
         {
             "id":8,
             "title":"My Video Title 8...",
-            "videourl":"https://i.imgur.com/vzojofX.mp4"
+            "imgurid":"vzojofX"
         },
         {
             "id":9,
             "title":"My Video Title 9...",
-            "videourl":"https://i.imgur.com/vzojofX.mp4"
+            "imgurid":"vzojofX"
         },
         {
             "id":10,
             "title":"My Video Title 10...",
-            "videourl":"https://i.imgur.com/vzojofX.mp4"
+            "imgurid":"vzojofX"
         }
     ]
 }
