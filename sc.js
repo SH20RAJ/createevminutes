@@ -6,6 +6,9 @@ let title = document.querySelector('#title');
 
 window.currentvideo = 0;
 
+video.onloadeddata = function(){
+  document.querySelector('#loader').style.display = "none";
+}
 //Functions 
 function init(){
   video.src = videojson.videos[0].videourl;
@@ -15,7 +18,11 @@ function init(){
 
 
 function next(){
-  if(currentvideo == 10) back();
+  document.querySelector('#loader').style.display = "block";
+  video.onloadeddata = setTimeout(function(){
+  document.querySelector('#loader').style.display = "none";
+},1000) 
+  if(currentvideo == 9) back();
   let id = videojson.videos[currentvideo + 1];
   video.src = id.videourl;
   title.innerHTML = id.title;
@@ -24,7 +31,7 @@ function next(){
 }
 
 function prev(){
-  if(currentvideo == 1) back();
+  if(currentvideo == 0) back();
   let id = videojson.videos[currentvideo - 1];
   video.src = id.videourl;
   title.innerHTML = id.title;
@@ -41,17 +48,16 @@ function playpause() {
 }
 
 function fill(){
-  let x = currentvideo/10 * 100;
+  let x = (currentvideo + 1)/10 * 100;
   let fill = document.querySelector('#completed').style.width = ""+x+"%";
-  document.location.hash = currentvideo;
-  check();
+  document.location.hash = currentvideo + 1;
+  // check();
 }
 
-function check(){
-  
-  
-}
 function back(){
   window.location.href = "../"
 }
 
+function share(){
+  window.location.href = videojson.videos[currentvideo].videourl;
+}

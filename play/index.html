@@ -4,22 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CreateevMinutes - Creative Short Videos Here</title>
+
+  
+<meta property="og:title" content="CreateevMinutes - Creative Short Videos Here 💖" />
+<meta property="og:description" content="CreateevMinutes - Creative Short Videos Here 💖 -  Explore the CreateevMinutes Creative Collections - Every Collection contains 10 Videos or Contents - Enjoy 💖" />
+<meta property="og:image" content="https://createevminutes.sh20raj.repl.co/logo.jpg" />
+
+
+
 <link rel="shortcut icon" href="../logo.jpg" type="image/x-icon">
 <link rel="stylesheet" href="../cm.css">
 </head>
 <body>
+  
   <div class="container">
     <div id="scrollbar">
       <div id="completed"></div>
     </div>
     <video id="video" autoplay poster="">
-<source src="https://i.imgur.com/vzojofX.mp4">
+      <source src="">
     </video>
     <div id="title"></div>
+    <div id="share" onclick="share()">Share</div>
     <div onclick="next()" id="next"></div>
     <div onclick="prev()" id="prev"></div>
+    <div id="loader"></div>
+    <div id="ad">
+    </div>
     <div class="controls">
-      <div onclick="playpause()" id="playpause"></div>
+      <div onclick="playpause()" id="playpause">
+      </div>
     </div>
   </div>
   <script>
@@ -39,5 +53,7 @@
   .then(data => {window.videojson = data;init();});
   </script>
 <script src="../sc.js"></script>
+
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=61de7c5597d54f00196fa9db&product=sop' async='async'></script>
 </body>
 </html>
