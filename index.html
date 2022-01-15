@@ -58,7 +58,7 @@
 
     for (let i = 0; i < totaljsons; i++) {
       let n = getRandomInt(1,totaljsons);
-  storyhtml += `<a href="play/?collection=${n}"><div class="circle" ><img src="https://avatars.dicebear.com/api/adventurer/${n}.svg?b=%23f443aa&r=12" alt="" /><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;"
+  storyhtml += `<a href="play/?collection=${n}"><div class="circle" ><img src="https://avatars.dicebear.com/api/adventurer/${n}.svg" alt="" /><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;"
      xml:space="preserve"><circle cx="50" cy="50" r="40" /></svg></a></div>` ;
 }
 
@@ -84,8 +84,8 @@ fetch('collectiondata/'+n+'.json')
   .then(data => {window.videojson = data;
    storyhtml4 += `
    <div class="thumb">
-   <span class="abt">${n}.${rid}</span>
-   <a href="play/?collection=${n}#${rid}">
+   <span class="abt">${n}.${rid+1}</span>
+   <a href="play/?collection=${n}#${rid+1}">
 <img src="https://i.imgur.com/${videojson.videos[rid].imgurid}.png" class="thumbnail"/>
 
 </a>
@@ -94,7 +94,6 @@ fetch('collectiondata/'+n+'.json')
   story4.innerHTML = storyhtml4;
   });
 }
-
     
 </script>
 <style>
@@ -137,7 +136,7 @@ fetch('collectiondata/'+n+'.json')
 
     for (let i = 0; i < totaljsons; i++) {
       let n = getRandomInt(1,totaljsons);
-  storyhtml3 += `<a href="play/?collection=${n}"><div class="circle" ><img src="https://img.buymeacoffee.com/api/?size=2000&bg-image=bmc&name=${n}.svg?b=%23f443aa&r=12" alt="" /><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;"
+  storyhtml3 += `<a href="play/?collection=${n}"><div class="circle" ><img src="https://img.buymeacoffee.com/api/?size=2000&bg-image=bmc&name=${n}.svg?b=" alt="" /><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;"
      xml:space="preserve"><circle cx="50" cy="50" r="40" /></svg></a></div>` ;
 }
 

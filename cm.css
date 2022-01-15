@@ -78,15 +78,14 @@ button{
   z-index: 400;
 }
 #share {
-  color: #ffe882;
-  background: grey;
-  padding: 4px;
-  border-radius: 8px;
-  position: fixed;
-  bottom: 4px;
-  right: 0;
-  z-index: 4;
-  cursor: pointer;
+    color: #ffe882;
+    width: 40px;
+    bottom: 4px;
+}
+#reset img {
+  transform: rotate(
+90deg
+);
 }
 #loader {
   position: absolute;

@@ -12,12 +12,14 @@ video.onloadeddata = function(){
 //Functions 
 function init(){
   video.src = "https://i.imgur.com/"+videojson.videos[0].imgurid+".mp4";
+  video.poster = "https://i.imgur.com/"+videojson.videos[0].imgurid+".png";
   title.innerHTML = videojson.videos[0].title;
   
 }
 
 
 function next(){
+  video.poster = "";
   document.querySelector('#loader').style.display = "block";
   video.onloadeddata = setTimeout(function(){
   document.querySelector('#loader').style.display = "none";
@@ -31,6 +33,8 @@ function next(){
 }
 
 function prev(){
+video.poster = "";
+  
   if(currentvideo == 0) back();
   let id = videojson.videos[currentvideo - 1];
   video.src = "https://i.imgur.com/"+id.imgurid+".mp4";

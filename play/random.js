@@ -24,12 +24,16 @@ video.onloadeddata = function(){
 //Functions 
 function init(a){
   video.src = "https://i.imgur.com/"+videojson.videos[0].imgurid+".mp4";
+  video.poster = "https://i.imgur.com/"+videojson.videos[0].imgurid+".png";
+  document.getElementById('ogimg').content = "https://i.imgur.com/"+videojson.videos[0].imgurid+".png";
   title.innerHTML = videojson.videos[0].title;
+  document.getElementById('hiddenimg').src = "https://i.imgur.com/"+videojson.videos[0].imgurid+".png";
   fill(a);
 }
 
 
 function next(){
+  video.poster = "";
   document.querySelector('#loader').style.display = "block";
   video.onloadeddata = setTimeout(function(){
   document.querySelector('#loader').style.display = "none";
@@ -43,6 +47,7 @@ function next(){
 }
 
 function prev(){
+  video.poster = "";
   if(currentvideo == 0) back();
   let id = videojson.videos[currentvideo - 1];
   video.src = "https://i.imgur.com/"+id.imgurid+".mp4";
@@ -77,5 +82,7 @@ function back(){
 }
 
 function share(){
-  window.location.href = "https://i.imgur.com/"+ videojson.videos[currentvideo].imgurid +".mp4";
+let id = videojson.videos[currentvideo + 1].imgurid;
+
+  location.href = "https://api.whatsapp.com/send?text=Watch%20this%20Video%20on%20CreateevMinutes%20-%20Creative%20Short%20Videos%20Here%20%20%F0%9F%92%96%0A%0AVideo%20Link%20Here%20%3A-%20https://createevminutes.sh20raj.repl.co/play/?collection="+ rand  +"#"+(currentvideo + 1);
 }

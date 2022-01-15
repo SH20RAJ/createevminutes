@@ -8,7 +8,7 @@
   
 <meta property="og:title" content="CreateevMinutes - Creative Short Videos Here 💖" />
 <meta property="og:description" content="CreateevMinutes - Creative Short Videos Here 💖 -  Explore the CreateevMinutes Creative Collections - Every Collection contains 10 Videos or Contents - Enjoy 💖" />
-<meta property="og:image" content="https://createevminutes.sh20raj.repl.co/logo.jpg" />
+<meta id="ogimg" property="og:image" content="https://createevminutes.sh20raj.repl.co/logo.jpg" />
 
 
 
@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="../cm.css">
 </head>
 <body>
+ <img id="hiddenimg" src="https://createevminutes.sh20raj.repl.co/logo.jpg" style="display:none;"/>
   <div class="container">
     <div id="scrollbar">
       <div id="completed"></div>
@@ -24,10 +25,19 @@
       <source src="">
     </video>
     <div id="title"></div>
-    <a href="../"><div id="home">
-				<img src="../assets/home-button.svg" alt="">
+    <div id="colx">CM</div>
+		<div class="rightc">
+    <div id="reset" onclick="location.reload()">
+				<img src="../assets/right-arrow.png" style="rotate:90deg;" alt="">
+      </div>
+      <br>
+      <a href="../"><div id="home">
+				<img src="../assets/home.png" alt="">
       </div></a>
-    <div id="share" onclick="share()">Share</div>
+    <div id="share" onclick="share()"><img src="../assets/share.png" style="width:100%" alt=""></div>
+   </div>
+
+
     <div onclick="next()" id="next"></div>
     <div onclick="prev()" id="prev"></div>
     <div id="loader"></div>
@@ -45,11 +55,12 @@
   .then(response => response.json())
   .then(data => {window.videojson = data;init();});
   </script>
-<script src="../sc.js"></script>
+<script src="random.js"></script>
 
 <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=61de7c5597d54f00196fa9db&product=sop' async='async'></script>
 
 <style>
+  @import url(play.css);
   #home {
   position:fixed;
   top:0;
