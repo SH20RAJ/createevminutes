@@ -1,0 +1,41 @@
+
+div.rightc {
+    right: 4px;
+    bottom: 50px;
+    padding: 4px;
+    position: fixed;
+    z-index: 4;
+    cursor: pointer;
+}
+.rightc {
+  width: 50px;
+}
+.rightc img{
+  width:100%;
+}
+#colx{
+  color: #ffe882;
+  background: grey;
+  border-radius: 8px;
+  z-index: 4;
+  cursor: pointer;
+  margin:6px;
+}
+#colx {
+  position:fixed;
+  top:0;
+  right:0;
+}
+#home {
+  position:fixed;
+  top:0;
+  left:0;
+  margin:8px;
+}
+#home {
+  width: 50px;
+  border-radius:50%;
+}
+#home img{
+  width:100%;
+}
