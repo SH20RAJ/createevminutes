@@ -1,4 +1,6 @@
-
+body {
+  background: linear-gradient(to right, rgb(4, 21, 44), rgb(2, 71, 83));
+}
 div.rightc {
     right: 4px;
     bottom: 50px;

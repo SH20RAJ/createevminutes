@@ -1,8 +1,16 @@
+const getRandomInt = (min, max) => ~~(Math.random() * (max - min + 1) + min);
 let video = $('#video')[0];
 let title = $('#title')[0];
 
+let url = new URLSearchParams(location.href);
 
-getjson('ryQCmre');
+if(url.has('collection')){
+  getjson(url.get('collection'));
+}else{
+  getjson(posts[getRandomInt(0,posts.length)].id);
+}
+
+
 
 function getjson(id) {
   //var id = 'ryQCmre';
@@ -34,7 +42,6 @@ function init(json,currentvideo) {
   $('#completed')[0].style.width = (currentvideo+1)/json.data.images.length * 100+"%";
   location.hash = "?collection="+json.data.id+"&id="+(currentvideo+1)+"";
 }
-const getRandomInt = (min, max) => ~~(Math.random() * (max - min + 1) + min);
 
 function next(){
   init(json,window.currentvideo + 1)
@@ -52,3 +59,8 @@ function playpause() {
     video.pause();
   }
 }
+
+function share(){
+  location.href = "https://api.whatsapp.com/send?text=Watch%20this%20Video%20on%20CreateevMinutes%20-%20Creative%20Short%20Videos%20Here%20%20%F0%9F%92%96%0A%0AVideo%20Link%20Here%20%3A-%20https://createevminutes.sh20raj.repl.co/shorts?collection="+json.data.id+"&id="+(currentvideo+1)+"";
+}
+
