@@ -34,12 +34,16 @@ function init(json,currentvideo) {
   $('#completed')[0].style.width = (currentvideo+1)/json.data.images.length * 100+"%";
   location.hash = "?collection="+json.data.id+"&id="+(currentvideo+1)+"";
 }
+const getRandomInt = (min, max) => ~~(Math.random() * (max - min + 1) + min);
 
 function next(){
   init(json,window.currentvideo + 1)
 }
 function prev(){
   init(json,window.currentvideo - 1)
+}
+function random(){
+  getjson(posts[getRandomInt(0,posts.length)].id);
 }
 function playpause() {
   if (video.paused) {
