@@ -1,40 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>CreateevMinutes - Creative Short Videos Here</title>
-	<script src="shorts/posts.js">
-	</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CreateevMinutes - Creative Short Videos Here</title>
 
-	<script src="config.js">
-	</script>
+<script src="config.js"></script>
 
-	<meta name="google-site-verification" content="WARjJ-W0v43HadZRGsxMoq-hPPBawqU1YebL1FgtD2s" />
-	<link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <meta name="google-site-verification" content="WARjJ-W0v43HadZRGsxMoq-hPPBawqU1YebL1FgtD2s" />
+<link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
-	<link rel="stylesheet" href="assets/home.css">
-	<link rel="stylesheet" href="assets/nav.css">
-	<link rel="stylesheet" href="assets/story.css">
+<link rel="stylesheet" href="assets/home.css">
+<link rel="stylesheet" href="assets/nav.css">
+<link rel="stylesheet" href="assets/story.css">
 
-	<meta property="og:title" content="CreateevMinutes - Creative Short Videos Here 💖" />
-	<meta property="og:description" content="CreateevMinutes - Creative Short Videos Here 💖 -  Explore the CreateevMinutes Creative Collections - Every Collection contains 10 Videos or Contents - Enjoy 💖"
-	/>
-	<meta property="og:image" content="https://createevminutes.sh20raj.repl.co/logo.jpg" />
+<meta property="og:title" content="CreateevMinutes - Creative Short Videos Here 💖" />
+<meta property="og:description" content="CreateevMinutes - Creative Short Videos Here 💖 -  Explore the CreateevMinutes Creative Collections - Every Collection contains 10 Videos or Contents - Enjoy 💖" />
+<meta property="og:image" content="https://createevminutes.sh20raj.repl.co/logo.jpg" />
 
 </head>
-
 <body class="ssb24 ">
-	<script src="https://rebrand.ly/AutoTopBarJS">
-	</script>
+<script src="https://rebrand.ly/AutoTopBarJS"></script>
 
 
-	<div id="nav">
-		<h1>CreateevMinutes</h1>
-		<input type="checkbox" id="active">
+  <div id="nav">
+  <h1>CreateevMinutes</h1>
+          <input type="checkbox" id="active">
       <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
       <div class="wrapper">
          <ul>
@@ -54,7 +47,6 @@
   <pre id="story2" class="ssb2">
 
   </pre></div>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     let story = document.getElementById('story2');
     let storyhtml = ``;
@@ -65,9 +57,9 @@
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-    for (let i = 0; i < storylength; i++) {
-      let n = posts[getRandomInt(0,(posts.length-1))].id;
-  storyhtml += `<a href="shorts/?collection=${n}"><div class="circle" ><img src="https://avatars.dicebear.com/api/adventurer/${n}.svg" alt="" /><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;"
+    for (let i = 0; i < totaljsons; i++) {
+      let n = getRandomInt(1,totaljsons);
+  storyhtml += `<a href="play/?collection=${n}"><div class="circle" ><img src="https://avatars.dicebear.com/api/adventurer/${n}.svg" alt="" /><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;"
      xml:space="preserve"><circle cx="50" cy="50" r="40" /></svg></a></div>` ;
 }
 
@@ -81,51 +73,29 @@
   <script>
     let story4 = document.getElementById('story4');
     let storyhtml4 = ``;
-function getjson(id,vid) {
-  //var id = 'ryQCmre';
-  var form = new FormData();
-  var settings = {
-    "url": "https://api.imgur.com/3/album/"+id+"",
-    "method": "GET",
-    "timeout": 0,
-    "headers": {
-      "Authorization": "Client-ID 6db47bd7029562d"
-    },
-    "processData": false,
-    "mimeType": "multipart/form-data",
-    "contentType": false,
-    "data": form
-  };
-if(!vid){
-  vid = 0;
-}
-$.ajax(settings).done(function (response) {
-    doit(JSON.parse(response),vid);
-  });
-}
-for (let i = 0; i < storylength ; i++) {
-  var rpost = posts[getRandomInt(0,(posts.length-1))].id;
-  var rid = getjson(rpost);
-}
 
-var rimg = "";
 
-function doit(a,b){
-  console.log(a);
-  var rnd = getRandomInt(0,(a.data.images.length-1));
-  var id = a.data.images[rnd].id;
-  console.log(id)
-  storyhtml4 += `
+
+    for (let i = 0; i < 25; i++) {
+      let n = getRandomInt(1,totaljsons);
+      let rid = getRandomInt(1,10);
+
+fetch('collectiondata/'+n+'.json')
+  .then(response => response.json())
+  .then(data => {window.videojson = data;
+   storyhtml4 += `
    <div class="thumb">
-   <span class="abt">${a.data.id}.${rnd}</span>
-   <a href="shorts/?collection=${a.data.id}&id=${rnd}">
-<img src="https://i.imgur.com/${a.data.images[rnd - 1].id}.png" class="thumbnail"/>
+   <span class="abt">${n}.${rid+1}</span>
+   <a href="play/?collection=${n}#${rid+1}">
+<img src="https://i.imgur.com/${videojson.videos[rid].imgurid}.png" class="thumbnail"/>
 
 </a>
 </div>` ;
-story4.insertAdjacentHTML('beforeend',storyhtml4)
+  console.log(storyhtml4);
+  story4.innerHTML = storyhtml4;
+  });
 }
-
+    
 </script>
 <style>
 #story4{

@@ -23,7 +23,10 @@
 	<meta property="og:description" content="CreateevMinutes - Creative Short Videos Here 💖 -  Explore the CreateevMinutes Creative Collections - Every Collection contains 10 Videos or Contents - Enjoy 💖"
 	/>
 	<meta property="og:image" content="https://createevminutes.sh20raj.repl.co/logo.jpg" />
+	<script src="shorts/posts.js">
+	</script>
 
+	</script>
 </head>
 
 <body class="ssb24 ">
@@ -54,19 +57,15 @@
   <pre id="story2" class="ssb2">
 
   </pre></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     let story = document.getElementById('story2');
     let storyhtml = ``;
 
-    function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
 
-    for (let i = 0; i < totaljsons; i++) {
-      let n = getRandomInt(1,10);
-  storyhtml += `<a href="play/?collection=${n}"><div class="circle" ><img src="https://avatars.dicebear.com/api/adventurer/1${n}.svg?b=%23f443aa&r=12" alt="" /><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;"
+    for (var i = posts.length - 1; i >= 0; i--) {
+      let n = posts[i].id;
+  storyhtml += `<a href="shorts/?collection=${n}"><div class="circle" ><img src="https://avatars.dicebear.com/api/adventurer/${n}.svg" alt="" /><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="enable-background:new -580 439 577.9 194;"
      xml:space="preserve"><circle cx="50" cy="50" r="40" /></svg></a></div>` ;
 }
 
