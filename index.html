@@ -115,7 +115,7 @@ function doit(a,b){
   var rnd = getRandomInt(0,(a.data.images.length-1));
   var id = a.data.images[rnd].id;
   console.log(id)
-  storyhtml4 += `
+  storyhtml4 = `
    <div class="thumb">
    <span class="abt">${a.data.id}.${rnd}</span>
    <a href="shorts/?collection=${a.data.id}&id=${rnd}">

@@ -71,7 +71,9 @@ function playpause() {
 }
 
 function share(){
-  location.href = "https://api.whatsapp.com/send?text=Watch%20this%20Video%20on%20CreateevMinutes%20-%20Creative%20Short%20Videos%20Here%20%20%F0%9F%92%96%0A%0AVideo%20Link%20Here%20%3A-%20https://createevminutes.sh20raj.repl.co/shorts?collection="+json.data.id+"&id="+(currentvideo+1)+"";
+  var link = location.href;
+  alert("Video link :- "+link);
+  location.href = "https://api.whatsapp.com/send?text=Watch%20this%20Video%20on%20CreateevMinutes%20-%20Creative%20Short%20Videos%20Here%20%20%F0%9F%92%96%0A%0AVideo%20Link%20Here%20%3A-%20"+link.replace('&','%26')+"";
 }
 
 function getParameterByName(name, url = window.location.href) {
